@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background: url('/Assets/Path 1.svg');
+  background-color: #E6A7A5;
+}
+
+.background {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.cancer {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  z-index: 100;
+}
+
+.TitleDiv{
+  position: relative;
+  top: 15;
+}
+
+.ribbon {
+  height: 30px;
+  width: auto;
+  padding-right: 8px
+}
+nav {
+  background-color: #997776;
+}
+
+.lungTumor {
+  -webkit-animation: tilt-in-right-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: tilt-in-right-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Animation */
+@-webkit-keyframes tilt-in-right-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+            transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+            transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
